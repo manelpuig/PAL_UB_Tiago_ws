@@ -1,4 +1,5 @@
-#**1. Docker Install**
+# **1. Docker Install**
+
 You have to install:
 - Docker
 - Visual Studio Code
@@ -11,14 +12,16 @@ docker run --name PAL_Tiago_mpuig -e DISPLAY=host.docker.internal:0.0 -it palrob
 ```
 You are ready to use the work space in the container
 
-##**1.1. Use VS Code**
+## **1.1. Use VS Code**
+
 Use your Visual Studio Code with the extensions:
 - Docker
 - Dev Containers
 
 Execute the container and Connect to it within VS Code
 
-##**1.2. Use customized Dockerfile**
+## **1.2. Use customized Dockerfile**
+
 You can add some functionalities to the PAL Image
 - git
 - nautilus
