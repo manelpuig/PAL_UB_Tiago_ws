@@ -21,7 +21,7 @@ Use your Visual Studio Code with the extensions:
 Execute the container and Connect to it within VS Code:
 - from left-side menu choose Docker
 - right-click on the running container and select "Attach VS Code"
-- select "Open Folder" and choose /home/
+- select "Open Folder" and choose /
 
 
 ## **1.2. Use customized Dockerfile**
