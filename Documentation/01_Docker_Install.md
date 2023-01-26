@@ -1,7 +1,11 @@
 # **1. Docker Install**
 
 You have to install:
-- Docker
+- Docker for windows: an easy to install application that enables you to manage your
+containers (https://docs.docker.com/desktop/install/windows-install/)
+- Xming X server for Windows, an X11 display server that will allow you to visualize, in
+particular the RViZ robot visualization and tools and the Gazebo simulation of the
+robot. (https://sourceforge.net/projects/xming/)
 - Visual Studio Code
 
 In Docker, pull the PAL robotics Image:
@@ -30,7 +34,11 @@ source /tiago_public_ws/devel/setup.bash
 ## **1.2. Test the simulation**
 
 To verify the repository is working:
-- Open Xlaunch and select terminal:0
+- Open Xlaunch:
+    - First choose “Multiple windows” and set to 0 the “Display number”
+    - Then, set “Start no client” in the second screen
+    - In the third screen, click “Clipboard” and Primary Selection and “Disable access control”, while leaving “Native opengl” unclicked
+    - And just click “Finalize” in the last screen
 - launch in a terminal:
 ```shell
 cd /tiago_public_ws/
