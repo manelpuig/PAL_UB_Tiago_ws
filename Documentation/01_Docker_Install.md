@@ -21,12 +21,26 @@ Use your Visual Studio Code with the extensions:
 Execute the container and Connect to it within VS Code:
 - from left-side menu choose Docker
 - right-click on the running container and select "Attach VS Code"
-- select "Open Folder" and choose /
+- select "Open Folder" and choose /Tiago_Public_ws
+- Open file (file>open file...): /root/.bashrc and verify to source our repository (last line).
+```shell
+source /tiago_public_ws/devel/setup.bash
+```
 
+## **1.2. Test the simulation**
 
-## **1.2. Use customized Dockerfile**
+To verify the repository is working:
+- Open Xlaunch and select terminal:0
+- launch in a terminal:
+```shell
+cd /tiago_public_ws/
+source ./devel/setup.bash
+roslaunch tiago_gazebo tiago_gazebo.launch public_sim:=true end_effector:=pal-gripper
+```
+## **1.3. Repository syncronisation**
 
-You can add some functionalities to the PAL Image
-- git
-- nautilus
-- gnome terminal
+When working on VS Code, you need to:
+- Select "source control" from left side menu
+- select changes to sync
+- Add a commit
+- Push
