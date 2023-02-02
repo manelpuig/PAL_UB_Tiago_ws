@@ -1,7 +1,12 @@
-# PAL_Tiago_ws
+# PAL_UB_Tiago
 
-This work space will be used in Robotics subject of Master IoT
+This work space is a repository from the collaboration between PAL-Robotics and Robotics-UB team in the framework of Master ob Embedded systems for IoT.
 
-The documentation is located in: http://wiki.ros.org/Robots/TIAGo/Tutorials
+Contains Tutorial information from:
+- Tiago base: http://wiki.ros.org/Robots/PMB-2/Tutorials
+- Tiago robot: http://wiki.ros.org/Robots/TIAGo/Tutorials
 
 The docker available is: palroboticssl/tiago_tutorials
+
+Github public information: https://github.com/pal-robotics/tiago_tutorials
+
