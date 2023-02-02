@@ -1,8 +1,8 @@
 # **1. Docker Install**
+Docker Desktop is a one-click-install application for your Mac, Linux, or Windows environment that enables you to build and share containerized applications and microservices. (https://docs.docker.com/desktop/)
 
 You have to install:
-- Docker for windows: an easy to install application that enables you to manage your
-containers (https://docs.docker.com/desktop/install/windows-install/)
+- Docker for windows: an easy to install application that enables you to manage your containers (https://docs.docker.com/desktop/install/windows-install/)
 - Xming X server for Windows, an X11 display server that will allow you to visualize, in
 particular the RViZ robot visualization and tools and the Gazebo simulation of the
 robot. (https://sourceforge.net/projects/xming/)
@@ -10,6 +10,9 @@ robot. (https://sourceforge.net/projects/xming/)
 
 In Docker, pull the PAL robotics Image:
 - In Docker images find: palroboticssl/tiago_tutorials
+```shell
+docker pull palroboticssl/tiago_tutorials:melodic
+```
 - Create a container:
 ```shell
 docker run --name PAL_Tiago_mpuig -e DISPLAY=host.docker.internal:0.0 --mount src="C:\Users\puigm\Desktop\ROS_github\myPC_shared",dst=/home/myDocker_shared,type=bind -it palroboticssl/tiago_tutorials:melodic
@@ -27,6 +30,7 @@ We will also use VS Code to work and sync the changes we have made in Docker Con
     - Docker
     - Dev Containers
     - Git Extension Pack (when you are connected with container)
+    - Office Viewer extension
 
 Execute the container and Connect to it within VS Code:
 - from left-side menu choose Docker
