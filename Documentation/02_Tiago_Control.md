@@ -154,7 +154,12 @@ The joint trajectory, that composes this motion can be retrieved as follows:
 ```shell
 rosparam get /play_motion/motions/wave/points
 ```
+Each row of positions denote the position that each joint has to attain at the given time with respect to the start of the motion.
+
 In order to run a motion the following graphical action client can be used for noetic:
 ```shell
 rosrun actionlib_tools axclient.py /play_motion
 ```
+In the GUI the name of the motion to run must be filled. The skip_planning is set by default to False, which means that the transition to the first position of the joint trajectory will use planning to prevent collisions.
+
+By pressing the SEND GOAL button the request will be sent to /play_motion Action Server and the motion will start executing 
