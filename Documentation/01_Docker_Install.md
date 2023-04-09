@@ -15,14 +15,14 @@ In Docker, pull the PAL robotics Image:
 - In Docker images find: palroboticssl/tiago_tutorials
 
 ```shell
-docker pull palroboticssl/tiago_tutorials:melodic
+docker pull palroboticssl/tiago_tutorials:noetic
 docker pull palroboticssl/pal_mobile_base_tutorials:noetic
 ```
 
 - Create a container:
 
 ```shell
-docker run --name PAL_Tiago_mpuig -e DISPLAY=host.docker.internal:0.0 --mount src="C:\Users\puigm\Desktop\ROS_github\myPC_shared",dst=/home/myDocker_shared,type=bind -it palroboticssl/tiago_tutorials:melodic
+docker run --name PAL_Tiago_mpuig -e DISPLAY=host.docker.internal:0.0 --mount src="C:\Users\puigm\Desktop\ROS_github\myPC_shared",dst=/home/myDocker_shared,type=bind -it palroboticssl/tiago_tutorials:noetic
 
 docker run --name PAL_mobile_base_mpuig -e DISPLAY=host.docker.internal:0.0 --mount src="C:\Users\puigm\Desktop\ROS_github\myPC_shared",dst=/home/myDocker_shared,type=bind -it palroboticssl/pal_mobile_base_tutorials:noetic
 ```
